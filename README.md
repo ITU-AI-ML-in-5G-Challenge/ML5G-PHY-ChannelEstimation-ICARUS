@@ -1,12 +1,9 @@
 # ML5G-PHY-ChannelEstimation-ICARUS
-This repository contains the source codes and the description of the proposed solution to the challenge ML5H-PHY [channel estimation] by the team ICARUS. 
+This repository contains the source codes and the description of the proposed solution to the challenge “[ML5H-PHY [channel estimation]](https://research.ece.ncsu.edu/ai5gchallenge/)” by the team ICARUS. 
 
 Sparse Bayesian Learning for Site-Specific Hybrid MIMO Channel Estimation
 ==================
 
-This is a code package is related to the follow scientific article:
-
-Peter Händel, Özlem Tugfe Demir, Emil Björnson, Daniel Rönnow, “[Impact of Backward Crosstalk in 2x2 MIMO Transmitters on NMSE and Spectral Efficiency](https://arxiv.org/pdf/1912.08528.pdf),” IEEE Transactions on Communications, vol. 68, no. 7, pp. 4277-4292, July 2020.
 
 The package contains a simulation environment, based on Matlab, that reproduces some of the numerical results and figures in the article. *We encourage you to also perform reproducible research!*
 
