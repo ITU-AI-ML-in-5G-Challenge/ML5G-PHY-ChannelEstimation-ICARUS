@@ -1,5 +1,5 @@
 # ML5G-PHY-ChannelEstimation-ICARUS
-This repository contains the source codes and the description of the proposed solution to the challenge “[ML5H-PHY [channel estimation]](https://research.ece.ncsu.edu/ai5gchallenge/)” by the team ICARUS. 
+This repository contains the source codes and the description of the proposed solution to the challenge [ML5H-PHY [channel estimation]](https://research.ece.ncsu.edu/ai5gchallenge/) by the team ICARUS. 
 
 Sparse Bayesian Learning for Site-Specific Hybrid MIMO Channel Estimation
 ==================
