@@ -5,7 +5,7 @@
 %Size of Wtr: (64, 400)
 %Size of measurement matrix Phi: (Ntrain*Lr,Nt*Nr)
 
-sett = 1;
+sett = 1;  % Select it as an integer from 1 to 10.
 
 load(strcat('training_channels_',num2str(sett),'.mat'));
 
