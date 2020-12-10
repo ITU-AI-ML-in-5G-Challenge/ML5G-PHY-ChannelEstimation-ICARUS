@@ -5,12 +5,23 @@ Sparse Bayesian Learning for Site-Specific Hybrid MIMO Channel Estimation
 ==================
 
 
-The package contains a simulation environment, based on Matlab, that reproduces some of the numerical results and figures in the article. *We encourage you to also perform reproducible research!*
+The package contains the description file for the proposed sparse Bayesian learning method and source codes based on Matlab.
 
 
-## Abstract of Article
+## Abstract 
 
-We consider backward crosstalk in 2 x 2 transmitters, which is caused by crosstalk from the outputs of the transmitter to the inputs or by the combination of output crosstalk and impedance mismatch. We analyze its impact via feedback networks together with third-order power amplifier non-linearities. We utilize the Bussgang decomposition to express the distorted output signals of the transmitter as a linear transformation of the input plus uncorrelated distortion. The normalized mean-square errors (NMSEs) between the distorted and desired amplified signals are expressed analytically and the optimal closed-form power back-off that minimizes the worst NMSE of the two branches is derived. In the second part of the paper, an achievable spectral efficiency (SE) is presented for the communication from this “dirty” transmitter to another single-antenna receiver. The SE-maximizing precoder is optimally found by exploiting the hardware characteristics. Furthermore, the optimal power back-off is analyzed for two sub-optimal precoders, which either do not exploit any hardware knowledge or only partial knowledge. The simulation results show that the performance of these sub-optimal precoders is close-to-optimal. We also discuss how the analysis in this paper can be extended to transmitters with an arbitrary number of antenna branches.
+To tackle this challenging problem, we propose
+mainly a sparse Bayesian learning algorithm to exploit the
+sparsity of the channel. We utilize the pattern-coupling concept
+to model possible block sparsity patterns among the consecutive
+angle-of-arrivals (AoAs) and angle-of-departures (AoDs). As a
+first step, we obtain the time-domain channels from the provided
+training dataset by inverse FFT and remove the negligibly small
+taps. Then, we apply the algorithm to the true time-domain
+channels to obtain the sparse representations. Using joint angular
+distribution that is learned from training data, we refine the
+grids and pattern-coupling relations in testing stage in an aim to
+improve the channel estimation quality.
 
 
 ## Content of Code Package
@@ -22,9 +33,4 @@ See each file for further documentation.
 
 ## Acknowledgements
 
-The work of Ö. T. Demir and E. Björnson was partially supported by ELLIIT and the Wallenberg AI, Autonomous Systems and Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation. The work of D. Rönnow was partially financed by the European Commission within the European Regional Development Fund, the Swedish Agency for Economic and Regional Growth, and Region Gävleborg.
-
-
-## License and Referencing
-
-This code package is licensed under the GPLv2 license. If you in any way use this code for research that results in publications, please cite our original article listed above.
+The work of all team members was supported by the Wallenberg AI, Autonomous Systems and Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation. 
